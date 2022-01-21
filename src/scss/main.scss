@@ -1,0 +1,122 @@
+@import 'config';
+@import 'utility';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    background: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: $main-color;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+
+#header-home{
+    background: $light-color;
+}
+
+#logo {
+    // height: 1rem;
+    width: 12rem;
+    margin: 10px 0;
+    // color: #fff;
+    // text-transform: uppercase; 
+  }
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    #navbar-main ul{
+        display: flex;
+
+        li{
+            padding: 0 10px;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+    }
+}
+
+#clock{
+    margin: 1rem 0;
+}
+
+.clock{
+
+    background-color: $secondary-color;
+    width: 35rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    margin: 1rem auto;
+
+    &-time, &-ampm{
+        font-family: sans-serif;
+        font-size: 4.5rem;
+        color: $light-color;
+    }
+
+    &-time{
+        font-size: 5.5rem;
+    }
+}
+
+
+#pomodoro{
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 3fr 2fr 2fr;
+    }
+    
+    .box{
+        color: #fff;
+        background-color: $main-color;
+        padding: 1rem;
+        margin: 0.8rem;
+        border-radius: 1rem;
+    }
+
+    .info-wrapper{
+            text-align: center;
+            font-size: 0;
+            padding: 2rem 0;
+            
+             p{
+                 display: inline-block;
+             }
+
+             .wminutes,.wseconds,.bminutes,.bseconds, .colon, .cycles{
+                 font-size: 3rem;
+             }
+    }
+
+
+
+    .box button{
+        display: block;
+        width: 140px;
+        margin: 0 auto;
+    }
+}
+
+

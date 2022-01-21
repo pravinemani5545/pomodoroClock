@@ -1,0 +1,18 @@
+//Variables
+$website-width: 1024px;
+$main-color: #47AD96;
+$secondary-color: #5D85BD;
+$tertiary-color: #ECB348;
+$header-color: #486d6e;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url('../img/showcase.jpg');
+
+// @function set-text-color($color){
+//     @if (lightness($color) > 50) {
+//     @return #000;
+//     }@else{
+//     @return #fff;
+//     }
+// }

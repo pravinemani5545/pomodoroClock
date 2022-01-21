@@ -1,0 +1,189 @@
+.container {
+  max-width: 1024px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.btn-long, .btn-tertiary {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-tertiary {
+  background-color: #ECB348;
+  color: #fff;
+  border-radius: 1rem;
+}
+.btn-long {
+  display: block;
+  background-color: #ECB348;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 1rem 26rem;
+  margin: 1rem auto;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.p-4 {
+  padding: 4rem;
+}
+.p-5 {
+  padding: 5rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-3 {
+  margin: 3rem;
+}
+.m-4 {
+  margin: 4rem;
+}
+
+.bottom-line {
+  height: 1px;
+  background-color: rgba(3, 3, 3, 0.1);
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #47AD96;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+#header-home {
+  background: #f4f4f4;
+}
+
+#logo {
+  width: 12rem;
+  margin: 10px 0;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-container #navbar-main ul {
+  display: flex;
+}
+.flex-container #navbar-main ul li {
+  padding: 0 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+#clock {
+  margin: 1rem 0;
+}
+
+.clock {
+  background-color: #5D85BD;
+  width: 35rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 2rem;
+  margin: 1rem auto;
+}
+.clock-time, .clock-ampm {
+  font-family: sans-serif;
+  font-size: 4.5rem;
+  color: #f4f4f4;
+}
+.clock-time {
+  font-size: 5.5rem;
+}
+
+#pomodoro .grid-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+}
+#pomodoro .box {
+  color: #fff;
+  background-color: #47AD96;
+  padding: 1rem;
+  margin: 0.8rem;
+  border-radius: 1rem;
+}
+#pomodoro .info-wrapper {
+  text-align: center;
+  font-size: 0;
+  padding: 2rem 0;
+}
+#pomodoro .info-wrapper p {
+  display: inline-block;
+}
+#pomodoro .info-wrapper .wminutes, #pomodoro .info-wrapper .wseconds, #pomodoro .info-wrapper .bminutes, #pomodoro .info-wrapper .bseconds, #pomodoro .info-wrapper .colon, #pomodoro .info-wrapper .cycles {
+  font-size: 3rem;
+}
+#pomodoro .box button {
+  display: block;
+  width: 140px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=index.b10d73a7.css.map */

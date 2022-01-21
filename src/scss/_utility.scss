@@ -1,0 +1,122 @@
+.container{
+    max-width: $website-width;
+    margin: auto;
+    overflow: hidden;
+    // padding: 10px;
+}
+
+
+%btn-shared{
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    // transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn{
+
+    // &-primary{
+    //     @extend %btn-shared;
+    //     background-color: $main-color;
+    //     color: #fff;
+    // }
+    // &-secondary{
+    //     @extend %btn-shared;
+    //     background-color: $secondary-color;
+    //     color: #fff;
+    // }
+    &-tertiary{
+        @extend %btn-shared;
+        background-color: $tertiary-color;
+        color: #fff;
+        border-radius: 1rem;
+        // text-align: center;
+    }
+
+    &-long{
+        @extend %btn-shared;
+        display: block;
+        background-color: $tertiary-color;
+        color: #fff;
+        border-radius: 1rem;
+        padding: 1rem 26rem;
+        margin: 1rem auto;
+        // text-align: center;
+    }
+}
+
+.py{
+    &-1{
+        padding: 1rem 0;
+    }   
+    &-2{
+        padding: 2rem 0;
+    }   
+    &-3{
+        padding: 3rem 0;
+    }   
+    &-4{
+        padding: 4rem 0;
+    }   
+}
+
+.my{
+    &-1{
+        margin: 1rem 0;
+    }   
+    &-2{
+        margin: 2rem 0;
+    }   
+    &-3{
+        margin: 3rem 0;
+    }   
+    &-4{
+        margin: 4rem 0;
+    }   
+}
+
+.p{
+    &-1{
+        padding: 1rem;
+    }
+    &-2{
+        padding: 2rem;
+    }
+    &-3{
+        padding: 3rem;
+    }
+    &-4{
+        padding: 4rem;
+    }
+    &-5{
+        padding: 5rem;
+    }
+    
+}
+
+.m{
+    &-1{
+        margin: 1rem;
+    }
+    &-2{
+        margin: 2rem;
+    }
+    &-3{
+        margin: 3rem;
+    }
+    &-4{
+        margin: 4rem;
+    }
+}
+
+.bottom-line{
+    height: 1px;
+    background-color: rgba(3,3,3,0.1);
+    display: block;
+    // margin-top: 1rem;
+}
