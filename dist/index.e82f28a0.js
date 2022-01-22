@@ -568,24 +568,28 @@ digitalClock.prototype = {
 };
 pomoClock.prototype = {
     startb () {
-        this.updateBreakSec();
-        this.updateBreakMin();
-        this.bSecInterval = setInterval(()=>{
+        if (this.bSecInterval == undefined && this.bMinInterval == undefined) {
             this.updateBreakSec();
-        }, 1000);
-        this.bMinInterval = setInterval(()=>{
             this.updateBreakMin();
-        }, 60000);
+            this.bSecInterval = setInterval(()=>{
+                this.updateBreakSec();
+            }, 1000);
+            this.bMinInterval = setInterval(()=>{
+                this.updateBreakMin();
+            }, 60000);
+        } else alert('Timer already started');
     },
     start () {
-        this.updateWorkSec();
-        this.updateWorkMin();
-        this.wSecInterval = setInterval(()=>{
+        if (this.wSecInterval == undefined && this.wMinInterval == undefined) {
             this.updateWorkSec();
-        }, 1000);
-        this.wMinInterval = setInterval(()=>{
             this.updateWorkMin();
-        }, 60000);
+            this.wSecInterval = setInterval(()=>{
+                this.updateWorkSec();
+            }, 1000);
+            this.wMinInterval = setInterval(()=>{
+                this.updateWorkMin();
+            }, 60000);
+        } else alert('Timer already started');
     },
     updateWorkSec () {
         if (this.wSec.textContent == 0) this.wSec.textContent = 59;
@@ -631,6 +635,11 @@ pomoClock.prototype = {
         clearInterval(this.wSecInterval);
         clearInterval(this.bMinInterval);
         clearInterval(this.bSecInterval);
+        this.wMinInterval = undefined;
+        this.wSecInterval = undefined;
+        this.bMinInterval = undefined;
+        this.bSecInterval = undefined;
+        console.log(this.wMinInterval);
     }
 };
 const clockObject = new digitalClock(clockElement);
